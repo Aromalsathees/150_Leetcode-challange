@@ -1,0 +1,14 @@
+function stairs(ind){
+    
+if(ind==0){
+    return 1
+}
+    if(ind<0){
+        return 0
+    }
+    
+    let oneway=stairs(ind-1)
+    let secway=stairs(ind-2)
+    return oneway+secway
+}
+console.log(stairs(8))
