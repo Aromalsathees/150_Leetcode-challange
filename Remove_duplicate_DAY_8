@@ -1,0 +1,20 @@
+function reverse(arr) {
+    let l = 0;
+    let r = arr.length - 1;
+    
+    while (l < r) {
+        // Swap elements at positions l and r
+        let temp = arr[l];
+        arr[l] = arr[r];
+        arr[r] = temp;
+        
+        // Move the pointers towards the center
+        l++;
+        r--;
+    }
+}
+
+
+let arr = ["h", "e", "l", "l", "o"];
+reverse(arr);
+console.log(arr); 
